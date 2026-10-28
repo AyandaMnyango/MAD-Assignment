@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Recipe Title -->
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            tools:text="Spicy Tomato &amp; Basil Pasta" />
+
+        <!-- Instructions Header -->
+        <TextView
+            android:id="@+id/tvInstructionsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:accessibilityHeading="true"
+            android:text="@string/recipe_instructions_header"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="Instructions:" />
+
+        <!-- Instructions Body -->
+        <TextView
+            android:id="@+id/tvDetailInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="1. Boil a large pot of salted water.\n2. Cook pasta for 8-10 minutes.\n3. Sauté garlic and chili in olive oil." />
+
+    </LinearLayout>
+</ScrollView>
